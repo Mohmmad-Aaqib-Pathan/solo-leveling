@@ -3,12 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hunting</title>
+    <title>Solo Leveling - Fan Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image" href="resource/img/crossswordfevi.png">
-</head>
+    <script src="script.js"></script>
+    <link rel="icon" href="resource/img/crossswordfevi.png">
+</head> 
 <body>
+    <header class="header">
+            <img  class="crown-icon" src="resource/img/daggers-icon.png">
+        <h1 class="main-title">SOLO LEVELING</h1>
+        <p class="subtitle">ARISE</p>
+    </header>
 
-    <script src="artif.js"></script>
+    <main class="container">
+        <h2 class="section-title">Characters</h2>
+
+        <div class="characters-grid">
+            <div class="character-card" onclick="toggleAbilities(this)">
+                <div class="card-header">
+                    <!--<div class="card-icon"><img src="resource/img/ahjin-guild-logo.png"></div>
+                -->
+                <img class="card-icon" src="resource/img/ahjin-guild-logo.png">    
+                <div class="card-info">
+                        <h3 class="char-name">Sung Jin-Woo</h3>
+                        <p class="char-title">Shadow Monarch</p>
+                        <p class="char-rank">National Level Hunter</p>
+                    </div>
+                </div>
+               <div class="image-placeholder"> 
+                    <img src="resource/img/sung-jin-woo.jpg" alt="sung-jin-woo">
+                </div> 
+                <p class="char-description">
+                    The protagonist who transforms from the weakest E-rank hunter to the most powerful hunter. He gains the ability to control shadows and raise the dead as his loyal soldiers.
+                </p>
+                <div class="abilities-section">
+                    <h4 class="abilities-title">Abilities:</h4>
+                    <div class="abilities-grid">
+                        <div class="ability-tag">Shadow Extraction</div>
+                        <div class="ability-tag">Shadow Exchange</div>
+                        <div class="ability-tag">Monarch's Domain</div>
+                        <div class="ability-tag">Ruler's Authority</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="toggleAbilities(this)">
+                <div class="card-header">
+                    <img class="card-icon" src="resource/img/HuntersGuild-logo.png"> 
+                    <div class="card-info">
+                        <h3 class="char-name">Cha Hae-In</h3>
+                        <p class="char-title">Korea's Strongest Female Hunter</p>
+                        <p class="char-rank">S-Rank Hunter</p>
+                    </div>
+                </div>
+                <div class="image-placeholder">
+                    <img src="resource/img/chae-hae-in.jpg" alt="Chae-Hae-In">
+                </div>
+                <p class="char-description">
+                    Vice-Guild Master of the Hunters Guild. She possesses exceptional sword skills and has a unique ability to smell mana. She's one of the few S-rank hunters in Korea.
+                </p>
+                <div class="abilities-section">
+                    <h4 class="abilities-title">Abilities:</h4>
+                    <div class="abilities-grid">
+                        <div class="ability-tag">Sword Mastery</div>
+                        <div class="ability-tag">Enhanced Senses</div>
+                        <div class="ability-tag">Super Speed</div>
+                        <div class="ability-tag">Demon Slaying</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="toggleAbilities(this)">
+                <div class="card-header">
+                    <img class="card-icon" src="resource/img/ahjin-guild-logo.png"> 
+                    <div class="card-info">
+                        <h3 class="char-name">Igris</h3>
+                        <p class="char-title">Blood-Red Commander</p>
+                        <p class="char-rank">Elite Grade Shadow</p>
+                    </div>
+                </div>
+                <div class="image-placeholder">
+                    <img src="resource/img/igris.jpg">
+                </div>
+                <p class="char-description">
+                    A knight shadow soldier and one of Jin-Woo's most powerful shadows. Originally a boss from the Demon Castle, he serves as Jin-Woo's loyal commander.
+                </p>
+                <div class="abilities-section">
+                    <h4 class="abilities-title">Abilities:</h4>
+                    <div class="abilities-grid">
+                        <div class="ability-tag">Master Swordsmanship</div>
+                        <div class="ability-tag">Blood Lust</div>
+                        <div class="ability-tag">Commander's Presence</div>
+                        <div class="ability-tag">Undying Loyalty</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="character-card" onclick="toggleAbilities(this)">
+                <div class="card-header">
+                    <img class="card-icon" src="resource/img/ahjin-guild-logo.png"> 
+                    <div class="card-info">
+                        <h3 class="char-name">Beru</h3>
+                        <p class="char-title">Marshal Grade Shadow</p>
+                        <p class="char-rank">Marshal Grade</p>
+                    </div>
+                </div>
+                <div class="image-placeholder">
+                    <img src="resource/img/beru.jpg">
+                </div>
+                <p class="char-description">
+                    The former Ant King transformed into Jin-Woo's shadow soldier. Despite his fearsome appearance, he's incredibly loyal and protective of Jin-Woo.
+                </p>
+                <div class="abilities-section">
+                    <h4 class="abilities-title">Abilities:</h4>
+                    <div class="abilities-grid">
+                        <div class="ability-tag">Paralysis Poison</div>
+                        <div class="ability-tag">Flight</div>
+                        <div class="ability-tag">Extreme Regeneration</div>
+                        <div class="ability-tag">Dimensional Storage</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <p class="quote-text">"Arise."</p>
+            <p class="quote-author">- Sung Jin-Woo, Shadow Monarch</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Solo Leveling Hunter Archive • Made by Kadiaru aka Architect</p>
+    </footer>
+
 </body>
 </html>
